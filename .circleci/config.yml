@@ -1,9 +1,10 @@
 version: 2.1
-orbs: circleci/heroku@1.0.0
+orbs: 
+  heroku: circleci/heroku@1.0.0
 workflows:
   build_app:
     jobs:
-      -build
+      - build
   heroku_deploy:
     jobs:
       - deployment
