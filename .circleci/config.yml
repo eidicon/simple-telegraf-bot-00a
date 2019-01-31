@@ -1,13 +1,8 @@
 version: 2.1
-orbs: 
-  heroku: circleci/heroku@1.0.0
 workflows:
   build_app:
     jobs:
       - build
-  heroku_deploy:
-    jobs:
-      - deployment
 jobs:
   build:
     docker:
@@ -27,13 +22,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       # run tests!
-      - run: yarn test
-  deployment:
-    executor: heroku/default
-    steps:
-      - checkout
-      - heroku/install
-      - heroku/deploy-via-git:
-          only-branch: master    
-
-
+      - run: yarn test   
