@@ -6,7 +6,10 @@
   "author": "eidicon <aleksb2601@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "^10.15.0"
+    "node": "^10.15.1"
+  },
+  "script": {
+    "test": "echo test"
   },
   "scripts": {
     "test": "echo test"
