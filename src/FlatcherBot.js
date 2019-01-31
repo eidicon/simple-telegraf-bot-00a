@@ -2,7 +2,7 @@ import BotConstructor from 'telegraf'
 require('dotenv').config()
 
 export class Flatcher {
-  constructor () {
-    this.bot = new BotConstructor()
+  static async init () {
+    return new BotConstructor()
   }
 }
