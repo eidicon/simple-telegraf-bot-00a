@@ -1,3 +1,3 @@
-import { Flatcher } from './src/FlatcherBot'
+const bot = require('./src/controller')
 
-const bot = Flatcher.init()
+bot.launch()
