@@ -1,3 +1,3 @@
-const bot = require('./src/controller')
+const initializer = require('./src/botInitializer')
 
-bot.launch()
+initializer.bot.launch()

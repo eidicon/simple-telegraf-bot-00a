@@ -9,10 +9,6 @@
     "node": "^10.15.0"
   },
   "scripts": {
-    "test": "echo test",
-    "start": "node index.js"
-  },
-  "scripts": {
     "test": "echo test"
   },
   "devDependencies": {
@@ -24,8 +20,11 @@
     "eslint-plugin-standard": "^4.0.0"
   },
   "dependencies": {
+    "awilix": "^4.2.0",
+    "axios": "^0.18.0",
     "dotenv": "^6.2.0",
     "node-wit": "^5.0.0",
-    "telegraf": "^3.27.0"
+    "telegraf": "^3.27.0",
+    "winston": "^3.2.1"
   }
 }

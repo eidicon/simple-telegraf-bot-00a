@@ -1,4 +1,4 @@
-const { commandsSet } = require('../constants')
+const { commandsSet } = require('../utils/constants')
 
 /**
  * @description Skips defined commands
